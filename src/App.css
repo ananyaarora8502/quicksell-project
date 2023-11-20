@@ -1,0 +1,115 @@
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #F4F5F8;
+}
+
+select{
+    border: 1px solid #000;
+    padding: 0.3em;
+}
+
+.dropdown-section{
+    background: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+.kanban-board-section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;;
+}
+
+.general-icon{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.main-board{
+    display: inline-grid;
+    column-gap: 10px;
+    padding: 0 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.group-heading-img{
+    width: 20px;
+    margin-top: -4px;;
+}
+
+.group-heading{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* Employee Card */
+
+.employee-card{
+    padding: 1em;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.user-img{
+    width: 30px;
+}
+
+.available-img{
+    width: 10px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+}
+
+.employee-card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-id{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+}
+
+.employee-status-img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.employee-title{
+    font-size: 1em;
+    margin-left: -7px;
+}
+
+.employee-card-tags{
+    display: flex;
+    margin-top: 10px;
+}
+
+.employee-card-tag{
+    padding: 0.2em 1em;
+    margin-right: 5px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-board{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .main-board{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
